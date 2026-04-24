@@ -32,7 +32,7 @@ const Index = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-background/20 via-transparent to-transparent" />
 
         <div className="container relative py-20 md:py-28">
-          <div className="space-y-7 max-w-2xl">
+          <div className="space-y-7 max-w-2xl bg-background/40 backdrop-blur-md rounded-3xl p-8 border border-border/30 shadow-soft">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
