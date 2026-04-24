@@ -23,13 +23,18 @@ const Index = () => {
   return (
     <div>
       {/* HERO */}
-      <section className="relative overflow-hidden">
-        <div className="absolute inset-0 gradient-hero" />
+      <section className="relative overflow-hidden min-h-[90vh] flex items-center">
+        <img
+          src={hero}
+          alt="Sandal Glow Beauty Studio interior with rose gold accents"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-background/85 via-background/60 to-background/30" />
         <div className="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-accent/20 blur-3xl" />
         <div className="absolute -bottom-32 -left-32 w-96 h-96 rounded-full bg-secondary/40 blur-3xl" />
 
-        <div className="container relative grid lg:grid-cols-2 gap-12 items-center py-16 md:py-24">
-          <div className="space-y-7">
+        <div className="container relative py-20 md:py-28">
+          <div className="space-y-7 max-w-2xl">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -95,39 +100,6 @@ const Index = () => {
               </div>
             </motion.div>
           </div>
-
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            className="relative"
-          >
-            <div className="absolute -inset-4 gradient-rose rounded-[2.5rem] blur-2xl opacity-30 animate-glow-pulse" />
-            <div className="relative rounded-[2rem] overflow-hidden shadow-elegant">
-              <img
-                src={hero}
-                alt="Beautiful model with glowing skin at Sandal Glow Beauty Studio"
-                width={1536}
-                height={1024}
-                className="w-full h-[520px] object-cover"
-              />
-            </div>
-            <motion.div
-              animate={{ y: [0, -10, 0] }}
-              transition={{ duration: 4, repeat: Infinity }}
-              className="absolute -bottom-6 -left-6 bg-card rounded-2xl shadow-elegant p-4 border border-border w-44"
-            >
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full gradient-rose flex items-center justify-center">
-                  <Sparkles className="w-5 h-5 text-accent-foreground" />
-                </div>
-                <div>
-                  <div className="text-xs text-muted-foreground">Glow Score</div>
-                  <div className="font-serif text-lg text-foreground">98%</div>
-                </div>
-              </div>
-            </motion.div>
-          </motion.div>
         </div>
       </section>
 
