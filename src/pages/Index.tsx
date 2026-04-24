@@ -29,7 +29,6 @@ const Index = () => {
           alt="Sandal Glow Beauty Studio interior with rose gold accents"
           className="absolute inset-0 w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-background/20 via-transparent to-transparent" />
 
         <div className="container relative py-20 md:py-28">
           <div className="space-y-7 max-w-2xl bg-background/40 backdrop-blur-md rounded-3xl p-8 border border-border/30 shadow-soft">
