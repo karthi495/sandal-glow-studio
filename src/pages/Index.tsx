@@ -29,12 +29,10 @@ const Index = () => {
           alt="Sandal Glow Beauty Studio interior with rose gold accents"
           className="absolute inset-0 w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-background/85 via-background/60 to-background/30" />
-        <div className="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-accent/20 blur-3xl" />
-        <div className="absolute -bottom-32 -left-32 w-96 h-96 rounded-full bg-secondary/40 blur-3xl" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background/20 via-transparent to-transparent" />
 
         <div className="container relative py-20 md:py-28">
-          <div className="space-y-7 max-w-2xl">
+          <div className="space-y-7 max-w-2xl bg-background/40 backdrop-blur-md rounded-3xl p-8 border border-border/30 shadow-soft">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
